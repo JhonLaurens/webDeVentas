@@ -1,0 +1,70 @@
+/* Custom styles for the cannabis product page */
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar-brand img {
+    max-height: 50px;
+}
+
+.product-title {
+    color: #2c3e50;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    color: #27ae60;
+}
+
+.btn-primary {
+    background-color: #27ae60;
+    border-color: #27ae60;
+}
+
+.btn-primary:hover {
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 400px;
+}
+
+.nav-tabs .nav-link {
+    color: #34495e;
+}
+
+.nav-tabs .nav-link.active {
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    background-color: #ecf0f1;
+}
+
+footer a {
+    color: #34495e;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #2c3e50;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px;
+    }
+}

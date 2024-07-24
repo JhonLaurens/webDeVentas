@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto Premium de Cannabis - Tienda GreenLeaf</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/public/src/styles/styles.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="/api/placeholder/150/50" alt="Logo Tienda GreenLeaf" height="50"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Carrito</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Cuenta</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/api/placeholder/600/400" class="d-block w-100" alt="Producto Cannabis 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/api/placeholder/600/400" class="d-block w-100" alt="Producto Cannabis 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/api/placeholder/600/400" class="d-block w-100" alt="Producto Cannabis 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h1 class="mb-3">Variedad Premium de Cannabis</h1>
+                <p class="text-muted">por Cultivos GreenLeaf</p>
+                <h2 class="text-primary mb-3">$49.99</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="variant" class="form-label">Seleccionar Variante:</label>
+                        <select class="form-select" id="variant">
+                            <option value="1">1g</option>
+                            <option value="2">3.5g</option>
+                            <option value="3">7g</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg">Añadir al Carrito</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-8">
+                <ul class="nav nav-tabs" id="productTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab">Descripción</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="details-tab" data-bs-toggle="tab" data-bs-target="#details" type="button" role="tab">Detalles</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab">Reseñas</button>
+                    </li>
+                </ul>
+                <div class="tab-content mt-3" id="productTabsContent">
+                    <div class="tab-pane fade show active" id="description" role="tabpanel">
+                        <p>Nuestra Variedad Premium de Cannabis ofrece una mezcla única de relajación y enfoque. Perfecta para desconectar después de un largo día o potenciar la creatividad, esta variedad proporciona una experiencia suave y equilibrada.</p>
+                    </div>
+                    <div class="tab-pane fade" id="details" role="tabpanel">
+                        <h3>Detalles del Producto</h3>
+                        <ul>
+                            <li>THC: 18-22%</li>
+                            <li>CBD: 0.1-0.5%</li>
+                            <li>Terpenos: Mirceno, Limoneno, Cariofileno</li>
+                            <li>Cultivo: Interior</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="reviews" role="tabpanel">
+                        <h3>Opiniones de Clientes</h3>
+                        <div class="mb-3">
+                            <p><strong>Juan D.</strong> ⭐⭐⭐⭐⭐</p>
+                            <p>¡Excelente producto! Suave y efectivo.</p>
+                        </div>
+                        <div class="mb-3">
+                            <p><strong>Sara M.</strong> ⭐⭐⭐⭐</p>
+                            <p>Genial para relajarse. Volveré a comprar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h3>Productos Relacionados</h3>
+                <div class="card mb-3">
+                    <img src="/api/placeholder/300/200" class="card-img-top" alt="Producto Relacionado 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Variedad Similar</h5>
+                        <p class="card-text">Otra excelente opción para relajarse.</p>
+                        <a href="#" class="btn btn-primary">Ver Producto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-light mt-5 py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contáctanos</h5>
+                    <p>Email: info@greenleaf.com<br>Teléfono: (555) 123-4567</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Síguenos</h5>
+                    <a href="#" class="me-2">Facebook</a>
+                    <a href="#" class="me-2">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+                <div class="col-md-4">
+                    <h5>Legal</h5>
+                    <a href="#" class="d-block">Términos y Condiciones</a>
+                    <a href="#" class="d-block">Política de Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/public/src/scripts/script.js"></script>
+</body>
+</html>
